@@ -1,31 +1,39 @@
 :root {
-  --main-color: #800080;
-  --font-size: 16px;
+    --main-color: #800080;
+    --second-color: #e078e0;
+    --font-size: 16px;
 }
-body{
+
+body {
     background-color: var(--main-color);
 }
-main{
+
+body:hover {
+    cursor: default;
+}
+
+main {
     display: grid;
     grid-template-rows: 1fr 120px 1fr;
     justify-content: center;
 
 }
 
-#top{
+#top {
     margin-top: 200px;
     font-size: 40px;
     text-align: center;
 
 }
-#middle{
+
+#middle {
     display: flex;
     margin-top: 30px;
     text-align: center;
     justify-content: center;
 }
 
-#text-input{
+#text-input {
     display: flex;
     font-size: 25px;
     padding: 10px;
@@ -36,7 +44,7 @@ main{
     width: 400px;
 }
 
-#check-btn{
+#check-btn {
     width: 100px;
     height: 60px;
     border-radius: 10px;
@@ -45,7 +53,14 @@ main{
     font-size: 20px;
     font-weight: bold;
 }
-#result{
+
+#check-btn:hover {
+    cursor: pointer;
+    background-color: var(--second-color);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#result {
 
     display: flex;
     justify-content: center;
@@ -53,7 +68,8 @@ main{
     font-size: 25px;
     padding-bottom: 200px;
 }
-#result img{
+
+#result img {
     margin-left: 20px;
     width: 50px;
     height: 50px;
